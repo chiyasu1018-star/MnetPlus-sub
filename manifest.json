@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Mnet Plus CC 字幕提取器",
+  "version": "2.1.0",
+  "description": "在 Mnet Plus 视频页面拦截官方 CC 字幕（任意语言）并导出为 SRT。全部在本地完成，不上传任何数据。",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mnetplus.world/*",
+        "https://www.mnetplus.world/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "world": "ISOLATED",
+      "all_frames": false
+    },
+    {
+      "matches": [
+        "https://mnetplus.world/*",
+        "https://www.mnetplus.world/*"
+      ],
+      "js": [
+        "page-hook.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": false
+    }
+  ]
+}
