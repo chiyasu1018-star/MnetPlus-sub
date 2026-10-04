@@ -1,0 +1,17 @@
+# WorkBuddy 会话数据（含记忆文件，绝不上传）
+.workbuddy-ai/
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+
+# 打包产物与签名密钥
+*.zip
+*.crx
+*.pem
+*.key
